@@ -15,6 +15,7 @@ public class PrimeNumbers {
             if (isPrimeWithDoWhile(num3))
                 System.out.println(num3);
         }
+        printPrime(39);
     }
 
     public static boolean isPrimeWithFor(int number) {
@@ -49,6 +50,14 @@ public class PrimeNumbers {
         return true;
     }
     public static void printPrime(int number) {
-
+        number -= 1;
+        while (number > 1) {
+            if (isPrimeWithFor(number)) {
+                System.out.println("The next smaller prime number is: " + number);
+                return;
+            }
+            number--;
+        }
+        System.out.println("There is no prime number smaller than interred number");
     }
 }
