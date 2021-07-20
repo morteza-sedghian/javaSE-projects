@@ -36,6 +36,7 @@ public class PublicLibrarySystem {
                 delete(memberID, fullMemberName, membersAge, membersSex, isFilled);
                 menu(memberID, fullMemberName, membersAge, membersSex, isFilled);
             case 5:
+                scanner.close();
                 System.exit(0);
                 break;
             default:
